@@ -48,13 +48,7 @@ const Register = () => {
     navigate('/login');
   };
 
-  const fillTestData = (testRole) => {
-    setUsername(`${testRole}-user`);
-    setEmail(`${testRole}@demo.com`);
-    setPassword('password123');
-    setConfirmPassword('password123');
-    setRole(testRole);
-  };
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -158,33 +152,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Quick Fill Buttons */}
-          <div className="space-y-2">
-            <p className="text-xs text-gray-600">Quick fill test data:</p>
-            <div className="grid grid-cols-3 gap-2">
-              <button
-                type="button"
-                onClick={() => fillTestData('admin')}
-                className="py-1 px-2 text-xs bg-blue-600 text-white rounded hover:bg-blue-700"
-              >
-                Admin
-              </button>
-              <button
-                type="button"
-                onClick={() => fillTestData('sales_manager')}
-                className="py-1 px-2 text-xs bg-green-600 text-white rounded hover:bg-green-700"
-              >
-                Manager
-              </button>
-              <button
-                type="button"
-                onClick={() => fillTestData('salesman')}
-                className="py-1 px-2 text-xs bg-purple-600 text-white rounded hover:bg-purple-700"
-              >
-                Salesman
-              </button>
-            </div>
-          </div>
+          
 
           {/* Submit Button */}
           <div>
